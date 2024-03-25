@@ -1,0 +1,9 @@
+function Employee(firstName, lastName, jobTitle) {
+ Person.call(this, firstName, lastName); // call super constructor.
+ this.jobTitle = jobTitle;
+}
+// Inherit from Person
+Employee.prototype = Object.create(Person.prototype);
+let employee1 = new Employee("Jane", "Doe", "Developer");
+console.log(employee1.fullName()); // Jane Doe
+console.log(employee1.jobTitle); // Developer
