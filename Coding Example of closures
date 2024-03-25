@@ -1,0 +1,10 @@
+function makeCounter() {
+ let count = 0; // `count` is a local variable created by `makeCounter`.
+ return function() {
+ return count++; // Access `count` variable from the outer scope.
+ };
+}
+const counter = makeCounter();
+console.log(counter()); // Outputs: 0
+console.log(counter()); // Outputs: 1
+console.log(counter()); // Outputs: 2
