@@ -1,0 +1,7 @@
+let message = 'Hello, world!';
+const pi = 3.14;
+var oldSchoolVar = 'I exist everywhere!';
+function showMessage() {
+ console.log(message);
+}
+showMessage(); // Outputs: Hello, world!
