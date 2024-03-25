@@ -1,0 +1,12 @@
+// Object example
+let person = {
+ firstName: 'Alice',
+ lastName: 'Johnson',
+ age: 30
+};
+// Array example
+let colors = ['Red', 'Green', 'Blue'];
+// Accessing object properties
+console.log(person.firstName); // Outputs: Alice
+// Accessing array elements
+console.log(colors[1]); // Outputs: Green
