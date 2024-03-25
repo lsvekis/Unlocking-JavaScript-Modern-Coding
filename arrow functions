@@ -1,0 +1,8 @@
+// With no parameters:
+const functionName = () => { /* code */ };
+// With one parameter:
+const functionName = param => { /* code */ };
+// With multiple parameters:
+const functionName = (param1, param2) => { /* code */ };
+// With a single expression (implicit return):
+const functionName = param => expression;
