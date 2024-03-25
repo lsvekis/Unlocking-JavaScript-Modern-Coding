@@ -1,0 +1,26 @@
+function Person(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+}
+
+// Add a method to Person's prototype to get the full name
+Person.prototype.fullName = function() {
+  return `${this.firstName} ${this.lastName}`;
+};
+
+function Employee(firstName, lastName, position) {
+  Person.call(this, firstName, lastName); // Call the Person constructor
+  this.position = position;
+}
+
+// Set up the prototype chain
+Employee.prototype = Object.create(Person.prototype);
+Employee.prototype.constructor = Employee;
+
+// Add method to Employee prototype
+Employee.prototype.describe = function() {
+  return `${this.fullName()} works as a ${this.position}.`;
+};
+
+const employee1 = new Employee('Jane', 'Doe', 'Developer');
+console.log(employee1.describe()); // Output: Jane Doe works as a Developer.
