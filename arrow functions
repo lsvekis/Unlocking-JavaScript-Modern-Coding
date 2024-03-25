@@ -6,3 +6,14 @@ const functionName = param => { /* code */ };
 const functionName = (param1, param2) => { /* code */ };
 // With a single expression (implicit return):
 const functionName = param => expression;
+
+
+
+// Traditional Function
+function add(a, b) {
+ return a + b;
+}
+// Arrow Function With Implicit Return
+const add = (a, b) => a + b;
+// Arrow Function Without Parameters
+const logHello = () => console.log('Hello, world!');
