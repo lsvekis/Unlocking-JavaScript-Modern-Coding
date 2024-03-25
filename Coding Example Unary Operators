@@ -1,0 +1,12 @@
+let a = "5";
+let b = -10;
+let c = true;
+let obj = { x: 10 };
+console.log(+a); // 5 (number)
+console.log(-b); // 10
+console.log(++b); // -9
+console.log(c = !c); // false
+console.log(typeof a); // "string"
+console.log(void a); // undefined
+delete obj.x; 
+console.log(obj); // {}
