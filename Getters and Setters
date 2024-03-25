@@ -1,0 +1,19 @@
+class Rectangle {
+ constructor(width, height) {
+ this._width = width;
+ this._height = height;
+ }
+ get area() {
+ return this._width * this._height;
+ }
+ set width(width) {
+ this._width = width;
+ }
+ set height(height) {
+ this._height = height;
+ }
+}
+const rect = new Rectangle(5, 10);
+console.log(rect.area); // Output: 50
+rect.width = 10;
+console.log(rect.area); // Output: 100
