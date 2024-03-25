@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>JavaScript Setup</title>
+</head>
+<body>
+ <h1>Welcome to JavaScript Development</h1>
+ <button onclick="displayAlert()">Click Me!</button>
+ <script>
+ function displayAlert() {
+ alert('Hello, world!');
+ }
+ </script>
+</body>
+</html>
