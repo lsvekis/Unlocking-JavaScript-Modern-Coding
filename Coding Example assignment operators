@@ -1,0 +1,7 @@
+let a = 10;
+a += 5; // a is now 15
+a -= 2; // a is now 13
+a *= 2; // a is now 26
+a /= 2; // a is now 13
+a %= 7; // a is now 6
+a **= 2; // a is now 36
