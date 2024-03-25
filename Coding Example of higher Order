@@ -1,0 +1,12 @@
+// Higher-order function that uses a callback
+function repeat(n, action) {
+ for (let i = 0; i < n; i++) {
+ action(i);
+ }
+}
+// Calling the higher-order function with an inline function
+repeat(3, console.log); // Output: 0 1 2
+// Using higher-order function to create a new function
+const labels = [];
+repeat(5, i => labels.push(`Label ${i + 1}`));
+console.log(labels); // Output: ['Label 1', 'Label 2', 'Label 3', 'Label 4', 'Label 5']
