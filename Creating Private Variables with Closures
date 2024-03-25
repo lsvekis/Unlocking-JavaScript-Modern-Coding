@@ -1,0 +1,18 @@
+function createCounter() {
+ let count = 0; // `count` is a private variable
+ return {
+ increment: function() {
+ count += 1;
+ console.log(count);
+ },
+ decrement: function() {
+ count -= 1;
+ console.log(count);
+ }
+ };
+}
+const counter = createCounter();
+counter.increment(); // Logs: 1
+counter.increment(); // Logs: 2
+counter.decrement(); // Logs: 1
+// The `count` variable cannot be accessed directly from outside `createCounter`.
