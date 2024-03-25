@@ -1,0 +1,12 @@
+class Employee extends Person {
+ constructor(name, age, jobTitle) {
+ super(name, age); // Calls the parent class constructor
+ this.jobTitle = jobTitle;
+ }
+ introduce() {
+ console.log(`I am ${this.name}, a ${this.jobTitle}.`);
+ }
+}
+const employee1 = new Employee("Jane", 25, "Software Developer");
+employee1.introduce(); // Output: I am Jane, a Software Developer.
+employee1.greet(); // Output: Hello, my name is Jane and I am 25 years old.
