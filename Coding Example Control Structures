@@ -1,0 +1,23 @@
+// Using conditional statements
+const age = 20;
+if (age >= 18) {
+ console.log('You are an adult.');
+} else {
+ console.log('You are a minor.');
+}
+// Using a for loop
+for (let i = 0; i < 5; i++) {
+ console.log(`Iteration number ${i}`);
+}
+// Using a switch statement
+const day = 'Monday';
+switch (day) {
+ case 'Monday':
+ console.log('Start of the work week.');
+ break;
+ case 'Friday':
+ console.log('End of the work week.');
+ break;
+ default:
+ console.log('Middle of the work week.');
+}
