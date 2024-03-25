@@ -1,0 +1,17 @@
+// Click event
+document.getElementById('myButton').addEventListener('click', () => {
+ console.log('Button clicked!');
+});
+// Mouseover event
+document.getElementById('myElement').addEventListener('mouseover', () => {
+ console.log('Mouse is over the element!');
+});
+// Keydown event
+document.addEventListener('keydown', (event) => {
+ console.log(`Key pressed: ${event.key}`);
+});
+// Form submit event
+document.getElementById('myForm').addEventListener('submit', (event) => {
+ event.preventDefault(); // Prevent form submission
+ console.log('Form submitted!');
+});
