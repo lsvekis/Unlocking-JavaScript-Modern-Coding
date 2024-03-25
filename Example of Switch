@@ -1,0 +1,11 @@
+let fruit = "apple";
+switch(fruit) {
+ case "banana":
+ console.log("Yellow fruit");
+ break;
+ case "apple":
+ console.log("Red or green fruit");
+ break;
+ default:
+ console.log("Unknown fruit color");
+}
