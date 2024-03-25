@@ -1,0 +1,10 @@
+let a = 10;
+let b = 3;
+console.log(a + b); // 13 (Addition)
+console.log(a - b); // 7 (Subtraction)
+console.log(a * b); // 30 (Multiplication)
+console.log(a / b); // 3.3333333333333335 (Division)
+console.log(a % b); // 1 (Modulus - Remainder)
+console.log(a ** b); // 1000 (Exponentiation)
+a++; // a becomes 11
+b--; // b becomes 2
