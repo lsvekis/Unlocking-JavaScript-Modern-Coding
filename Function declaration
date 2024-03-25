@@ -1,0 +1,7 @@
+// Function declaration
+function calculateArea(width, height) {
+ return width * height;
+}
+// Calling the function
+const area = calculateArea(10, 20);
+console.log(area); // Outputs: 200
