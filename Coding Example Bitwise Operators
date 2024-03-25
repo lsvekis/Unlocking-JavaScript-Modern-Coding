@@ -1,0 +1,16 @@
+let a = 9; // In binary: 1001
+let b = 5; // In binary: 0101
+// AND operation
+console.log(a & b); // 1 (binary: 0001)
+// OR operation
+console.log(a | b); // 13 (binary: 1101)
+// XOR operation
+console.log(a ^ b); // 12 (binary: 1100)
+// NOT operation
+console.log(~a); // -10 (binary: 11111111111111111111111111110110)
+// Left Shift operation
+console.log(a << 2); // 36 (binary: 100100)
+// Sign-propagating Right Shift operation
+console.log(a >> 2); // 2 (binary: 0010)
+// Zero-fill Right Shift operation
+console.log(a >>> 2); // 2 (binary: 0010)
