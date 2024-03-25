@@ -1,0 +1,8 @@
+let age = 25; // number
+let firstName = 'Alice'; // string
+let isStudent = true; // boolean
+let middleName = undefined; // undefined
+let lastName = null; // null
+let uniqueId = Symbol('id'); // symbol
+let bigNumber = BigInt(9007199254740991); // bigint
+console.log(`Your name is ${firstName} and you are ${age} years old.`);
