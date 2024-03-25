@@ -1,0 +1,18 @@
+// Define a JavaScript object
+const person = {
+ name: "John Doe",
+ age: 30,
+ birthDate: new Date("1990-01-01"),
+ hobbies: ["reading", "cycling"]
+};
+// Stringify the JavaScript object
+const jsonString = JSON.stringify(person);
+console.log(jsonString); // Output the JSON string
+// Parse the JSON string back into a JavaScript object
+const parsedObject = JSON.parse(jsonString, (key, value) => {
+ if (key === "birthDate") {
+ return new Date(value); // Convert birthDate back to a Date object
+ }
+ return value;
+});
+console.log(parsedObject); // Output the parsed object
