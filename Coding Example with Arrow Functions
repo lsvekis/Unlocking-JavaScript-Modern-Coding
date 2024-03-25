@@ -1,0 +1,13 @@
+// Array mapping with an arrow function
+const numbers = [1, 2, 3, 4, 5];
+const squared = numbers.map(number => number * number);
+console.log(squared); // Output: [1, 4, 9, 16, 25]
+// Using arrow function with `filter`
+const evenNumbers = numbers.filter(number => number % 2 === 0);
+console.log(evenNumbers); // Output: [2, 4]
+// Multiline arrow function
+const add = (a, b) => {
+ const result = a + b;
+ return result;
+};
+console.log(add(5, 7)); // Output: 12
