@@ -1,0 +1,7 @@
+function createGreeting(greeting) {
+ return function(name) {
+ console.log(greeting + ', ' + name + '!');
+ };
+}
+const greetHello = createGreeting('Hello');
+greetHello('Alice'); // Output: Hello, Alice!
