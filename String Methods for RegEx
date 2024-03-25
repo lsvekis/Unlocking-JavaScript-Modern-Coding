@@ -1,0 +1,6 @@
+let text = 'The quick brown fox jumps over the lazy dog.';
+let pattern = /quick/;
+console.log(text.match(pattern)); // ['quick']
+console.log(text.search(pattern)); // 4
+console.log(text.replace(/quick/, 'slow')); // 'The slow brown fox jumps over the lazy dog.'
+console.log(text.split(/\s+/)); // ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog.']
