@@ -1,0 +1,13 @@
+console.log('Start');
+setTimeout(() => {
+ console.log('Timeout 1');
+}, 3000);
+setTimeout(() => {
+ console.log('Timeout 2');
+}, 0);
+console.log('End');
+// Output:
+// Start
+// End
+// Timeout 2
+// Timeout 1
