@@ -1,0 +1,8 @@
+let proto = {
+ greet: function() {
+ console.log("Hello, my name is " + this.name + "!");
+ }
+};
+let person2 = Object.create(proto);
+person2.name = "John Smith";
+person2.age = 28;
