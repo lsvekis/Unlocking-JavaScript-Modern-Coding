@@ -1,0 +1,15 @@
+console.log('Start');
+// Asynchronous operation using Promise
+const checkData = new Promise((resolve, reject) => {
+ setTimeout(() => {
+ resolve('Data loaded');
+ }, 2000);
+});
+checkData.then((message) => {
+ console.log(message);
+});
+console.log('End');
+// Output:
+// Start
+// End
+// Data loaded
