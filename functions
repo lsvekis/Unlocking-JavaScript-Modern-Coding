@@ -1,0 +1,5 @@
+function greet(name = 'Guest', greeting = 'Hi') {
+ console.log(`${greeting}, ${name}!`);
+}
+greet('Alice', 'Hello'); // Outputs: "Hello, Alice!"
+greet(); // Outputs: "Hi, Guest!"
