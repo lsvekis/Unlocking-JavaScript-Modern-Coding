@@ -1,0 +1,4 @@
+let age = 20;
+let beverage = age >= 18 ? "Beer" : "Juice";
+console.log(beverage); // "Beer"
+This code assigns "Beer" to beverage if age is 18 or older, and "Juice" otherwise.
