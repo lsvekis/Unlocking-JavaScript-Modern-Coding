@@ -1,0 +1,9 @@
+let user = {
+ name: "Jane Doe",
+ age: 28,
+ address: {
+ street: "123 Main St",
+ city: "Anytown",
+ state: "CA"
+ }
+};
